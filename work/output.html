@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cv{
+            height: 100px;
+            width: 1550px;
+            border: 2px solid black;
+            background-color: darkgreen;
+            color: white;
+            display: flex;
+        }
+        
+        #g{
+            height: 650px;
+            width:800px ;
+            border: 2px solid black;
+            margin: 30px;
+        }
+        #vc{
+            height: 230px;
+            width:500px ;
+            border: 2px solid black;
+            margin-top: -650px;
+            margin-left: 925px;
+            background-color: grey;
+            
+        }
+        #vc:hover{
+            height: 250px;
+            width:500px ;
+            border: 2px solid black;
+            background-color:rgb(207, 207, 207);
+        }
+        table,th,td{
+            border: 2px solid black;
+            margin-left: 70px;
+        }
+        p{
+            text-align: center;
+        }
+        #bu{
+            height: 95px;
+            width: 250px;
+            border: 2px solid black;
+            text-align: center;
+            margin-left: 900px;
+            background-color:darkolivegreen;
+        }
+        #bu:hover{
+            height: 95px;
+            width: 250px;
+            border: 2px solid black;
+            text-align: center;
+            margin-left: 900px;
+            background-color:yellowgreen;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            
+        }
+        #sa{
+            height: 500px;
+            width:500px ;
+            border: 2px solid black;
+            background-color: grey;
+            margin-left: 925px;
+    
+        }
+        #sa:hover{
+            background-color: rgb(207, 207, 207);
+            height: 550px;
+            width:500px ;
+            border: 2px solid black;
+            margin-left: 925px;
+        }
+        #nm{
+            height: 330px;
+            width: 800px ;
+            border: 2px solid black;
+            background-color: grey;
+            margin-top: -90px;
+            margin-left: 50px;
+        }
+        #nm:hover{
+            height: 350px;
+            width:800px ;
+            border: 2px solid black;
+            background-color:rgb(207, 207, 207);
+        }
+    </style>
+</head>
+<body>
+   <div id="cv">
+    <h1>OUTPUT AND CODING</h1>
+    <div id="bu">
+        <h1><a href="./firealaram.html">HOME</a></h1>
+    </div>
+
+   </div>
+   <img src="./image/onfire.png" alt="" id="g">
+   <div id="vc">
+    <p>const int flamePin = A0;
+        <br>
+        const int ledPin = 6;
+        <br>
+        const int buzzerPin = 3;
+        </p>
+        <p> 
+            In this Code we will setting the pin of buzzer,sensor and led 
+            <table>
+                <tr>
+                    <th> flamePin(SENSOR) </th>
+                    <td> analog pin A0 </td>
+                </tr>
+                <tr>
+                    <th> LED </th>
+                    <td> Digital pin 6 </td>
+                </tr>
+                <tr>
+                    <th> BUZZER </th>
+                    <td> Digital pin 3 </td>
+                </tr>
+                
+            </table>
+        </p>
+   </div>
+   <img src="" alt="">
+   <div id="sa">
+    <p>
+        void setup() {
+            <br>
+            <br>
+            pinMode(flamePin, INPUT);
+            <br>
+            <br>
+            pinMode(ledPin, OUTPUT);
+            <br>
+            <br>
+            pinMode(buzzerPin, OUTPUT);
+            <br>
+            <br>
+            Serial.begin(9600);
+          }
+        
+    </p>
+    <ol>
+        <li>Three constant integer variables: flamePin, ledPin, and buzzerPin are defined.</li>
+        <li>These variables hold the pin numbers for connected components.</li>
+        <li>Adjust these pin numbers to match your hardware configuration.</li>
+        <li>In the setup() function:</li>
+        <li>In the setup() function:</li>
+        <ul>
+            <li>pinMode(flamePin, INPUT);: Sets flamePin as an input for the flame sensor's analog output.</li>
+            <li>pinMode(ledPin, OUTPUT);: Defines ledPin as an output for an LED.</li>
+            <li>pinMode(buzzerPin, OUTPUT);: Specifies buzzerPin as an output for a buzzer.</li>
+            <li>Serial.begin(9600);: Initializes serial communication at 9600 baud for data exchange with a connected computer.</li>
+        </ul>
+    </ol>
+   </div>
+   <div id="nm">
+     <ol>
+        <li>Variable Definitions:</li>
+        <ul>
+            <li>flamePin, ledPin, and buzzerPin are defined to store component connection pin numbers.</li>
+        </ul>
+        <li>Setup Function:</li>
+        <ul>
+            <li>setup() initializes:</li>
+            <li>flamePin as input for the flame sensor.</li>
+            <li> ledPin as output for the LED.</li>
+            <li> buzzerPin as output for the buzzer.</li>
+            <li>Serial communication at 9600 baud rate.</li>
+        </ul>
+        <li>Loop Function:</li>
+        <ul>
+            <li>loop() repeatedly:</li>
+            <li> Reads flame intensity from the sensor.</li>
+            <li>If intensity is above 250:</li>
+            <li>Turns on the LED and activates the buzzer.</li>
+            <li> Sends "Fire detected!" to serial.
+            <li>If intensity is below 250:</li>
+            <li>Turns off the LED and deactivates the buzzer.</li>
+            <li>Waits for 1 second before repeating.</li>
+        </ul>
+    </ol>
+   </div>
+   
+</body>
+</html>

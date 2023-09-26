@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhyaz Fire Alaram</title>
+    <style>
+        #hf{
+            height: 100px;
+            width: 1550px;
+            border: 2px solid black;
+            background-color: darkgreen;
+            color: white;
+        }
+        #bf{
+            height: 90px;
+            width: 150px;
+            border: 2px solid darkgreen;
+            background-color:greenyellow;
+            color:white;
+            margin-top: -82px;
+            margin-left: 1000px;
+            border-top-right-radius:70px;
+            border-bottom-left-radius:70px;
+            border-bottom-right-radius:70px;
+            border-top-left-radius:70px;
+        }
+        #bf:hover{
+            height: 90px;
+            width: 150px;
+            border: 2px solid black;
+            background-color:rgb(101, 165, 4);
+            color:white;
+            border-top-right-radius:70px;
+            border-bottom-left-radius:70px;
+            border-bottom-right-radius:70px;
+            border-top-left-radius:70px;
+        }
+        #rf{
+            height: 450px;
+            width:900px ;
+            border: 2px solid black;
+            background-color: grey;
+            color: white;
+            margin: 10px;
+        }
+        #rf:hover{
+            height: 450px;
+            width:900px ;
+            border: 2px solid black;
+            background-image: url(./image/7iaLrbB5T.gif);
+            color: white;
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+        #sf{
+            height: 450px;
+            width:900px ;
+            border: 2px solid black;
+            background-color: grey;
+            color: white;
+        }
+        #sf:hover{
+            height: 450px;
+            width:900px ;
+            border: 2px solid black;
+            background-image: url(./image/7iaLrbB5T.gif);
+            color: white;
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+        #we{
+            text-align: center;
+            justify-content: center;
+        }
+        a{
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+        }
+       #ew{
+            height: 90px;
+            width: 190px;
+            border: 2px solid darkgreen;
+            background-color:greenyellow;
+            color:white;
+            margin-top: -92px;
+            margin-left: 1170px;
+            border-top-right-radius:70px;
+            border-bottom-left-radius:70px;
+            border-bottom-right-radius:70px;
+            border-top-left-radius:70px;
+       }
+       #ew:hover{
+            height: 90px;
+            width: 190px;
+            border: 2px solid black;
+            background-color:rgb(101, 165, 4);
+            color:white;
+            border-top-right-radius:70px;
+            border-bottom-left-radius:70px;
+            border-bottom-right-radius:70px;
+            border-top-left-radius:70px;
+       }
+        
+    </style>
+</head>
+<body>
+    <div id="hf">
+        <h1>
+            Fire Detection and Alarm
+        </h1>
+        <div id="bf">
+            <h1 id="we"><a href="./output.html"> OUTPUT</a></h1>
+        </div>
+        <div id="ew">
+            <h1><a href="./componet.html">Components</a></h1>
+        </div>
+    </div>
+   <div id="rf">
+    <h1>Components:</h1>
+    <ol>
+        <li>Arduino Uno</li>
+        <li>Flame Sensor </li>
+        <li>Buzzer</li>
+        <li>LED</li>
+        <li>Resistor (220-330 ohms)</li>
+        <li>Breadboard and wires(alway use Breadboard because it will align)</li>
+    </ol>
+   </div>
+   
+
+   <div id="sf">
+    <h1>Steps:</h1>
+    <ol>
+        <li>Place the Arduino Uno and a breadboard on the Tinkercad canvas</li>
+        <br>
+        <li>Connect the positive (longer) leg of the LED to a digital pin (e.g., D2) through a current-limiting resistor (220-330 ohms). 
+            <br>Connect the negative (shorter) leg of the LED to the ground (GND) pin on the Arduino.</li>
+            <br>
+        <li>Connect one leg of the buzzer to another digital pin (e.g., D3). 
+            <br>Connect the other leg of the buzzer to the ground (GND) pin on the Arduino.</li>
+            <br>
+        <li>Place the flame sensor on the breadboard. It usually has three pins: VCC, GND, and OUT.</li>
+        <br>
+        <li>Connect the VCC pin of the flame sensor to the 5V output on the Arduino.</li>
+        <br>
+        <li>Connect the GND pin of the flame sensor to the ground (GND) pin on the Arduino.</li>
+        <br>
+        <li>Connect the OUT pin of the flame sensor to an analog pin (e.g., A0) on the Arduino.</li>
+        <br>
+        <li>Write the Arduino code to read the flame sensor's analog input, detect a flame, and trigger the LED and buzzer.</li>
+    </ol>
+   </div>
+
+</body>
+</html>
